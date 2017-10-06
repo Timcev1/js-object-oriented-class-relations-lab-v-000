@@ -30,7 +30,7 @@ class Passenger{
 
 let tripId = 0
 class Trip {
-  constructor(driver, passenger, startingZip, endingZip){
+  constructor(driver, passenger){
     this.driverId = driverId;
     this.passengerId = passengerId;
     this.id = ++tripId
