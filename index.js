@@ -10,7 +10,7 @@ class Driver{
       if (el.driverId === this.id){
         return el
       }
-    }.bind(this))
+    })
   }
   passengers(){
     let t = this.trips().filter(function(el, i , array){
