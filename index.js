@@ -1,4 +1,4 @@
-let stored = {drivers: [], passengers: [], trips: []};
+let store = {drivers: [], passengers: [], trips: []};
 let driverId = 0;
 class Driver{
   constructor(name){
