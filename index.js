@@ -27,6 +27,7 @@ class Passenger{
   }
 
 }
+
 let tripId = 0
 class Trip {
   constructor(driver, passenger, startingZip, endingZip){
@@ -35,3 +36,4 @@ class Trip {
     this.id = ++tripId
     store.trips.push(this)
   }
+}
