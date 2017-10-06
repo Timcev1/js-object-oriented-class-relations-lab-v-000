@@ -10,7 +10,6 @@ class Driver{
     return store.trips.filter(function(trips){
         return trip.driverId == this.id
       }
-    })
   }
   passengers(){
     let t = this.trips().filter(function(el, i , array){
