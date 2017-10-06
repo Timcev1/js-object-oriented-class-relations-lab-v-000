@@ -1,5 +1,5 @@
 class Driver{
-  constructor(trips, passengers){
-    
+  constructor(name){
+
   }
 }
