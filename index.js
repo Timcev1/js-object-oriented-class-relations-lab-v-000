@@ -8,17 +8,10 @@ class Driver{
   }
   trips(){
     return store.trips.filter(function(trips){
-        return trip.driverId == this.id
+        return trips.driverId == this.id
       })
   }
   passengers(){
-    let t = this.trips().filter(function(el, i , array){
-      return el.passengerId
-    })
-    return t.map(function(el){
-      return store.passengers.find(function(p){
-        return el.passengerId === p.id
-      })
-    })
+    return this.trips().map(function(trips))
   }
 }
