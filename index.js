@@ -12,4 +12,14 @@ class Driver{
       }
     }.bind(this))
   }
+  passengers(){
+    let t = this.trips().filter(function(el, i , array){
+      return el.passengerId
+    })
+    return t.map(function(el){
+      return store.passengers.find(function(p){
+        return el.passengerId === ele.id
+      })
+    })
+  }
 }
