@@ -6,6 +6,10 @@ class Driver{
     this.id = ++driverId
   }
   trips(){
-    return
+    return store.trips.filter(function(el, i , array){
+      if (el.driverId === this.id){
+        return el
+      }
+    }.bind(this))
   }
 }
