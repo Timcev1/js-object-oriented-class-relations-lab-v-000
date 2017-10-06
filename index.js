@@ -18,7 +18,7 @@ class Driver{
   }
 }
 
-passangerId = 0
+passengerId = 0
 class Passenger{
   constructor(name){
     this.name = name
