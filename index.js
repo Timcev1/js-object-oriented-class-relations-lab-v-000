@@ -18,7 +18,7 @@ class Driver{
     })
     return t.map(function(el){
       return store.passengers.find(function(p){
-        return el.passengerId === ele.id
+        return el.passengerId === p.id
       })
     })
   }
