@@ -7,9 +7,8 @@ class Driver{
     store.drivers.push(this)
   }
   trips(){
-    return store.trips.filter(function(el, i , array){
-      if (el.driverId === this.id){
-        return el
+    return store.trips.filter(function(trips){
+        return trip.driverId == this.id
       }
     })
   }
