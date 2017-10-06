@@ -17,3 +17,10 @@ class Driver{
     })
   }
 }
+passangerid = 0
+class Passenger{
+  constructor(name){
+    this.name = name
+    this.id = ++passangerid
+  }
+}
